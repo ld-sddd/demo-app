@@ -16,3 +16,4 @@ def index():
     return str(f"number of posts: {counter_post}\nnumber of gets: {counter_get} ")
 if __name__ == '__main__':
     app.run(debug=True,port=80,host='0.0.0.0')
+
