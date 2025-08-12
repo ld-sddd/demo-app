@@ -1,5 +1,9 @@
 pipeline {
   agent any
+
+  triggers {
+    githubPush()
+  }
   environment {
     IMG_TAG  = "${env.GIT_COMMIT.take(7)}"
     IMG_NAME = "demo-app:${IMG_TAG}"
